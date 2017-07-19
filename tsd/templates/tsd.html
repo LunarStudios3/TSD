@@ -1,0 +1,249 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>TeamStrengthDetroit</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Team Strength Detroit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MAIN CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'tsd.css' %}" />
+  <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest Bootstrap compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cedarville+Cursive|Loved+by+the+King|Snippet|Sue+Ellen+Francisco|Voltaire" rel="stylesheet">
+  <!-- Hover -->
+<link href="C:\Users\Marsha\EventExecs\src\app\navbar\hover.css">
+  <!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- AnimateCSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!-- Lettering -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js">
+<!-- WOW -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    $(function() {
+      $(".img-w").each(function() {
+        $(this).wrap("<div class='img-c'></div>")
+        let imgSrc = $(this).find("img").attr("src");
+         $(this).css('background-image', 'url(' + imgSrc + ')');
+      })
+
+
+      $(".img-c").click(function() {
+        let w = $(this).outerWidth()
+        let h = $(this).outerHeight()
+        let x = $(this).offset().left
+        let y = $(this).offset().top
+
+
+        $(".active").not($(this)).remove()
+        let copy = $(this).clone();
+        copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+        $(".active").css('top', y - 8);
+        $(".active").css('left', x - 8);
+
+          setTimeout(function() {
+        copy.addClass("positioned")
+      }, 0)
+
+      })
+
+
+
+
+      })
+
+      $(document).on("click", ".img-c.active", function() {
+      let copy = $(this)
+      copy.removeClass("positioned active").addClass("postactive")
+      setTimeout(function() {
+        copy.remove();
+      }, 0)
+      })
+</script>
+
+<!--
+font-family: 'Voltaire', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Loved by the King', cursive;
+font-family: 'Sue Ellen Francisco', cursive;
+font-family: 'Snippet', sans-serif;
+-->
+
+</head>
+
+  <body class="background">
+    <!-- NAVIGATION BAR --><!-- NAVIGATION BAR --><!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-fixed-top" style="margin-bottom: -20px;">
+      <div class="navbar-header">
+      <a style="padding-top: -12px; font-size: 25px; font-family: 'Sue Ellen Francisco', cursive; text-align: center; display: block; color: white;" class="navbar-brand"  href="#">Team Strength Detroit</a>
+    </div>
+      <div class="container-fluid">
+        <ul style="float: right;"class="nav navbar-nav">
+          <li class="active "><a class="menuText"href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle menuText" data-toggle="dropdown" href="#">Projects
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  class="menuText" href="{% url 'QQ' %}">Quarter Quts</a></li>
+              <li><a  class="menuText" href="{% url 'SY' %}">Start-Up</a></li>
+            </ul>
+          </li>
+          <li><a class="menuText" href="{% url 'blog' %}">BLOG</a></li>
+<li><a style="color: gold;"class="menuText" href="{% url 'donate' %}">DONATE NOW</a></li>        </ul>
+      </div>
+</nav>
+
+    <!-- NAVIGATION BAR --><!-- NAVIGATION BAR --><!-- NAVIGATION BAR -->
+
+
+
+
+
+  <div style="padding-left:16px">
+
+    <br></br>
+  </div>
+
+  <div class="container" style="margin-right: -945px">
+
+ </div>
+
+
+
+
+
+
+
+<!-- SideNav BAR \\\\\\\\\\\\\\\\\\\ -->
+
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+
+
+<div class="jumbotron" style="background-color: white;box-shadow: 0 2px 6px 0 rgba(255,255,255,0.24), 0 3px 10px 0 rgba(255,255,255,0.19);">
+  <iframe width="100%" height="700px;"
+          src="https://www.youtube.com/embed/GSCnzS1nmD4?autoplay=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="col-md-1">  </div>
+
+
+
+    <div class="col-md-12  mainSection">
+      <h1 style="  font-size: 70px; font-family: 'Sue Ellen Francisco', cursive; text-align: center; margin-top: 100px;">
+        Team Strength Detroit <img src="http://i.imgur.com/q0ULIpq.jpg?1"> </h1>
+
+        <div class="row about">
+          <div class="col-xs-12">
+            <div class="row">
+
+              <div style="padding-top: 150px ; height: 100vh;" class="col-md-6 col-xs-12">
+                <h1>ABOUT</h1>
+                <p>Add about text, and some photos</p>
+              </div>
+
+              <div style=" height: 100vh;" class="col-ms-6 col-xs-12">
+                <div class="gallery animated slideInUp wow">
+                  <div class="img-w">
+                    <img src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                  <div class="img-w"><img src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" /></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row tsdprograms">
+          <div class="col-xs-12">
+            <h1>TSD PROGRAMS</h1>
+            <p>
+          </div>
+        </div>
+
+        <div class="row otherprograms">
+          <div class="col-xs-12">
+            <h1>OTHER PROGRAMS</h1>
+          </div>
+        </div>
+
+        <div class="row contact">
+          <div class="col-xs-12">
+            <h1> CONTACT US TODAY</h1>
+            <div class="container" style="margin-top: 100px;">
+            <form>
+              <h1 style="padding: 22px 0; font-size: 35px; font-family: 'Sue Ellen Francisco', cursive;
+              text-align: center; display: block; color: #f74e47;">Team Strength Detroit</h1>
+
+              <label for="fname"> </label>
+              <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+
+              <label for="lname"> </label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+
+              <label for="email"></label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+
+              <label for="lname"></label>
+              <input style="margin-bottom: 20px;" type="text" id="lname" name="lastname" placeholder="Amount Donating..">
+
+              <textarea>Leave a Message !</textarea>
+
+            <div style="text-align: center;">
+            <button style=" margin-top:20px;"type="button" class="btn btn-danger btn-lg"
+                    data-toggle="modal" data-target="#myModal">DONATE</button>
+            </form>
+          </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="col-md-1">   </div>
+
+  </div>
+</div>
+
+
+
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+
+
+
+
+
+</body>
+</html>
