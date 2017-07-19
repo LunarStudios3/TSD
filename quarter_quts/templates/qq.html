@@ -176,13 +176,12 @@ font-family: 'Snippet', sans-serif;
               <form class=" animated slideInUp">
                 <h1 class="fadeInDelayed" style="padding: 22px 0; font-size: 55px; font-family: 'Sue Ellen Francisco', cursive;
                 text-align: center; display: block; color: black;">Quarter Quts</h1>
-                <input style="box-shadow: 0 2px 6px 0 rgba(255,255,255,0.24), 0 3px 10px 0 rgba(255,255,255,0.19);" class="animated slideInRight" type="text" id="fname" name="firstname" placeholder="Your First Name.."><br><br>
-                <input style="box-shadow: 0 2px 6px 0 rgba(255,255,255,0.24), 0 3px 10px 0 rgba(255,255,255,0.19);" class="animated slideInLeft" type="text" id="lname" name="lastname" placeholder="Your Last Name.."><br><br>
-                <input style="box-shadow: 0 2px 6px 0 rgba(255,255,255,0.24), 0 3px 10px 0 rgba(255,255,255,0.19);" class="animated slideInRight" type="text" id="lname" name="lastname" placeholder="Your Email.."><br><br>
-
-                <label for="message">Leave a message:</label>
-                <textarea name="message"></textarea>
-
+                {{ form.First_Name }} <br><br>
+                {{ form.Last_Name }} <br><br>
+                {{ form.from_email }}<br><br>
+                {{ form.subject }} <br><br>
+                {{ form.message }} <br><br>
+                <button type="submit" style="float:center">Submit</button> </form>
               <div style="text-align: center;">
                 <button style="margin-top: 20px; box-shadow: 0 2px 6px 0 rgba(255,255,255,0.24), 0 3px 10px 0 rgba(255,255,255,0.19);"
                 type="button" class="button button1" data-dismiss="modal" style="color: white;">Close</button>
