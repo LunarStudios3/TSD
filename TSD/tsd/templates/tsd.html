@@ -1,0 +1,234 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>TeamStrengthDetroit </title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Team Strength Detroit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MAIN CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'tsd.css' %}">
+  <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest Bootstrap compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cedarville+Cursive|Loved+by+the+King|Snippet|Sue+Ellen+Francisco|Voltaire" rel="stylesheet">
+  <!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- AnimateCSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!-- Lettering -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js">
+<!-- WOW -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    $(function() {
+      $(".img-w").each(function() {
+        $(this).wrap("<div class='img-c'></div>")
+        let imgSrc = $(this).find("img").attr("src");
+         $(this).css('background-image', 'url(' + imgSrc + ')');
+      })
+
+
+      $(".img-c").click(function() {
+        let w = $(this).outerWidth()
+        let h = $(this).outerHeight()
+        let x = $(this).offset().left
+        let y = $(this).offset().top
+
+
+        $(".active").not($(this)).remove()
+        let copy = $(this).clone();
+        copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+        $(".active").css('top', y - 8);
+        $(".active").css('left', x - 8);
+
+          setTimeout(function() {
+        copy.addClass("positioned")
+      }, 0)
+
+      })
+
+
+
+
+      })
+
+      $(document).on("click", ".img-c.active", function() {
+      let copy = $(this)
+      copy.removeClass("positioned active").addClass("postactive")
+      setTimeout(function() {
+        copy.remove();
+      }, 0)
+      })
+</script>
+
+<!--
+font-family: 'Voltaire', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Loved by the King', cursive;
+font-family: 'Sue Ellen Francisco', cursive;
+font-family: 'Snippet', sans-serif;
+-->
+
+</head>
+
+  <body class="background">
+    <!-- NAVIGATION BAR --><!-- NAVIGATION BAR --><!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-fixed-top" style="margin-bottom: -20px;">
+      <div class="navbar-header">
+      <a style="padding-top: -12px; " class="navbar-brand"  href="#"><img style=" height:50px; width:50px; padding-bottom:5px;" src="http://i.imgur.com/q0ULIpq.jpg?1"></a>
+    </div>
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle menuText" data-toggle="dropdown" href="#">Projects
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  class="menuText" href="{% url 'QQ' %}">Quarter Quts</a></li>
+              <li><a  class="menuText" href="{% url 'SY' %}">Start-Up</a></li>
+            </ul>
+          </li>
+          <li><a class="menuText" href="{% url 'blog' %}">BLOG</a></li>
+<li><a style="color: gold;"class="menuText" href="{% url 'donate' %}">DONATE NOW</a></li>        </ul>
+      </div>
+</nav>
+
+    <!-- NAVIGATION BAR --><!-- NAVIGATION BAR --><!-- NAVIGATION BAR -->
+
+<!-- SideNav BAR \\\\\\\\\\\\\\\\\\\ -->
+
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+
+<div class="jumbotron">
+<!--  <iframe width="100%" height="700px;"
+          src=""></iframe> -->
+          <div class="gallery animated slideInLeft wow">
+          <h1 class= "jumbotext">
+            Team Strength Detroit <hr><img src="http://i.imgur.com/q0ULIpq.jpg?1"> </h1>
+          </div>
+</div>
+
+<div class="container-fluid">
+
+<div class="row">
+
+
+
+
+
+
+        <div class="row about">
+          <div class="col-xs-12">
+            <div class="row">
+
+              <div style="padding-top: 150px ; height: 100vh;" class="col-md-6 col-xs-12">
+                <h1>ABOUT</h1>
+                <p>Add about text, and some photos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+              <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="Chicago" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<br><br><br><br><br>
+<center><button class="w3-button"><a href="#"  style="color:white;">Donate Here</a></button></center>
+</div>
+<div class="container-fluid">
+        <div class="row tsdprograms">
+          <div class="col-xs-12">
+            <h1>Programs</h1>
+            <br>
+            <h2 class="header animated slideInLeft wow">StartUp Youth Entrepreneurship</h2>
+              <p class=" animated wow fadeInUp" style="width: 800px; margin: 0 auto; font-size: 30px; padding-top: 18px;">
+                Start Up is designed to promote business ownership as a viable career option to middle school
+                and high school youth..
+              </p>
+              <img  class=" animated wow fadeInRight" style="height:250px; width:300px;" src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=">
+
+            </div>
+          </div>
+  </div>
+
+        <div class="container-fluid contact">
+          <h1 style="padding-top:50px;"><center>Team Strength Detroit</center></h1>
+          <div class="col-xs-6 left">
+            <p> Team Strength Detroit<p>
+            <p> Address</p>
+            <p> Hours</p>
+          </div>
+          <div class="col-xs-6 right">
+          <br>
+            <p>social</p>
+            <p>links</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+<!-- MainSection --><!-- MainSection --><!-- MainSection --><!-- MainSection -->
+
+
+
+
+
+</body>
+</html>
