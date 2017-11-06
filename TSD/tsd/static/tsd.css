@@ -80,19 +80,6 @@ body{
 
 /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .menuText{
   color: white;
   font-weight: bolder;
@@ -224,13 +211,14 @@ margin-top: 300px;
 }
 
 .w3-button{
-  border-width:10px;
+  border-width:5px;
   border-style:;
+  color: white;
   border-color: rgba(52,117,147,0.9);
   background-color: rgba(52,117,147,0.9);
   font-size:25px;
   padding-bottom:15px;
-  text-align:;
+  text-align:center;
   border-radius: 10px;
   margin-bottom: 15px;
   margin-top: 15px;

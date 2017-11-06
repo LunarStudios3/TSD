@@ -21,9 +21,11 @@ p{
 .headerMenu{
   position: absolute;
   top: 120px;
-  left: 1100px;
-  width: 290px;
-  height: 90px;
+  left: 900px;
+  width: 190px;
+  height: 100px;
+  background-color: rgba(52,117,147,0.3);
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.24), 0 3px 10px 0 rgba(0,0,0,0.19);
   padding-top: 20px;
 }
 .photoMenu{
@@ -126,10 +128,10 @@ textarea {
     text-decoration: none;
     background-color: red;
 }
-.pageContainer{
+/*.pageContainer{
   background-color: lightgrey;
   height: 1200px;
-}
+}*/
 .header{
   color: black;
   text-align: left;
@@ -155,15 +157,46 @@ textarea {
 }
 
 
-.wyl{
+#pricing{
   background: red; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(white, gold); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(white, gold); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(white, gold); /* For Firefox 3.6 to 15 */
   background: linear-gradient(white, gold); /* Standard syntax */
   background-attachment: fixed;
-  height: 900px;
+  height: auto;
+  display:inline-block;
 }
+
+/*#pricing {
+  height: auto;
+  color: rgba(12, 72, 242, 1);
+}
+*/
+.panel {
+    border: 1px solid #f4511e;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-heading {
+    color: black !important;
+    background-color: white; !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+
+/*
 .wylHeader{
   color: black;
   text-align: center;
@@ -199,8 +232,7 @@ textarea {
   margin: 10px, 1px;
 }
 
-
-
+*/
 /* PHOTOS *//* PHOTOS *//* PHOTOS *//* PHOTOS *//* PHOTOS */
 
 .photos{
@@ -279,3 +311,23 @@ textarea {
   }
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+
+/*
+.contact{
+  height: auto;
+  background-color: #11b462;
+  font-size: 20px;
+
+}
+
+.right{
+  text-align:right;
+  font-size:;
+  padding-right: ;
+}
+
+.left{
+  font-size:;
+  padding-right: ;
+  text-align: left;
+}
