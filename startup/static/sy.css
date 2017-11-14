@@ -1,5 +1,10 @@
 .navbar{
-  background-color: rgba(52,117,147,0.9);
+  background: rgba(52,117,147,0.9); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(teal, rgba(52,117,147,0.9)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(teal, rgba(52,117,147,0.9)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(teal, rgba(52,117,147,0.9)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(teal, rgba(52,117,147,0.9)); /* Standard syntax */
+  background-attachment: fixed;
   height: 65px;
   position: fixed;
   box-shadow: 0px 1px 6px black;
@@ -144,50 +149,40 @@ textarea {
   color: black;
 }
 
+.w3-col{
+  height:300px;
+  width:100%;
+}
+
+.w3-green{
+height:445px;
+}
+
 
 .wyl{
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(white, gold); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white, gold); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white, gold); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(white, gold); /* Standard syntax */
+  background: rgba(52,117,147,0.9); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, teal, rgba(52,117,147,0.9)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, teal, rgba(52,117,147,0.9)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, teal, rgba(52,117,147,0.9)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, teal, rgba(52,117,147,0.9)); /* Standard syntax */
   background-attachment: fixed;
-  height: 900px;
+  height: 100vh;
+  width: 100%;
 }
 .wylHeader{
   color: black;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   margin-top: 100px;
 }
 .wylCardHeaders{
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  font-size: 25px;
+  font-size: 15px;
 }
-.cardOne{
-  height: 300px;
-  width: 100px;
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-  margin: 10px, 1px;
-}
-.cardTwo{
-  height: 300px;
-  width: 100px;
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-  margin: 10px, 1px;
-}
-.cardThree{
-  height: 300px;
-  width: 100px;
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-  margin: 10px, 1px;
-}
+
 
 
 

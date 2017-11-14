@@ -11,7 +11,12 @@ body{
 
 
 .navbar{
-    background-color: rgba(52,117,147,0.9);
+  background: rgb(17, 180, 98); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(52, 117, 147, 0.9), green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(52, 117, 147, 0.9), green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(52, 117, 147, 0.9), green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(52, 117, 147, 0.9), green); /* Standard syntax */
+  background-attachment: fixed;
     height: 65px;
     position: fixed;
     box-shadow: 0px 1px 6px black;
@@ -96,20 +101,31 @@ body{
     text-decoration: none;
     background-color: red;
 }
+
+.w3-col{
+  height:300px;
+  width:100%;
+}
+
+.w3-green{
+height:445px;
+}
+
+/*
 .jumbotron{
   height: 800px;
   width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  background-image::;
   margin-top: -90px;
 }
 
 .jumbotext{
 font-size: 60px;
 font-family: Sue Ellen Francisco, cursive;
-text-align: center;
+text-align: left;
 margin-top: 300px;
 }
-
+*/
 
 .about{
   height:100vh ;
@@ -202,7 +218,7 @@ margin-top: 300px;
 }
 
 #myCarousel{
-  height:100vh;
+  height:100%;
   width:100%;
 }
 
@@ -211,7 +227,7 @@ margin-top: 300px;
 }
 
 .w3-button{
-  border-width:5px;
+  border-width:3px;
   border-style:;
   color: white;
   border-color: rgba(52,117,147,0.9);
